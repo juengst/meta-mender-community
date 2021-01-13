@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="imx-5.4.24-2.1.0.xml"/>
+
+  <remote fetch="https://github.com/mendersoftware" name="mender"/>
+
+  <project name="meta-mender" remote="mender" revision="zeus" path="sources/meta-mender"/>
+  <project name="meta-mender-community" remote="mender" revision="zeus" path="sources/meta-mender-community">
+    <linkfile src="meta-mender-nxp-imx6ull/scripts/fsl-setup-mender.sh" dest="fsl-setup-mender.sh"/>
+</project>
+  
+</manifest>

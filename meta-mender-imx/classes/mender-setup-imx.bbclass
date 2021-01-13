@@ -6,7 +6,7 @@ python __anonymous () {
         d.setVar('MENDER_IMAGE_BOOTLOADER_BOOTSECTOR_OFFSET', str(2 * imx_boot_seek))
 }
 
-do_image_sdimg[depends] += "imx-boot:do_deploy"
+#do_image_sdimg[depends] += "imx-boot:do_deploy"
 
 IMAGE_INSTALL_append = " kernel-image kernel-devicetree"
 
